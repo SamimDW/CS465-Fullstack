@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Trip = require("../models/travlr"); // Register the Trip model
-
+const Model = mongoose.model("trips");
 
 // GET /api/trips - Retrieve all trips
 // Regardless of the outcome, response must include HTML status code

@@ -79,7 +79,7 @@ export class EditTrip implements OnInit {
     if (this.editForm.invalid) return;
 
     // If your backend expects Date, you can convert here (optional):
-    const payload = { ...this.editForm.value, start: new Date(this.editForm.value.start).toISOString() };
+    // const payload = { ...this.editForm.value, start: new Date(this.editForm.value.start).toISOString() };
 
     this.tripDataService.updateTrip(this.editForm.value).subscribe({
       next: () => this.router.navigate(['']),
