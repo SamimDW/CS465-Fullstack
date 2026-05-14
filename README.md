@@ -1,67 +1,71 @@
-# CS-465: Full Stack Development with MEAN
-
 # Travlr Getaways - Full Stack Travel Booking App
 
 A full-stack travel booking web application built with the **MEAN stack** (MongoDB, Express, Angular, Node.js). Features a customer-facing site for browsing trips and a secure admin SPA for managing trip data in real time.
 
 > Built as part of CS-465: Full Stack Development at Southern New Hampshire University
 
----
+
 
 ## Screenshots
 
-**Customer-Facing Trip Listing**
-![Trip Listing Page]<img width="2538" height="1304" alt="Screenshot 2026-05-13 160632" src="https://github.com/user-attachments/assets/4e9a4849-bdeb-4b71-a953-868a9b3b4ab0" />
+### Customer-Facing Trip Listing
 
-**Admin Dashboard - Manage Trips**
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Trip Listing Page](assets/trip-listing-page.png)<br><br>
 
-**Add / Edit Trip Form**
-![Edit Trip](screenshots/edit-trip.png)
 
----
+### Admin Dashboard - Manage Trips
+
+![Admin Dashboard](assets/admin-page.png)
+
+### Add and Edit Trip Forms
+
+#### Add Trip
+![Add Trip](assets/add-trip.png)
+
+#### Edit Trip
+![Edit Trip](assets/update-trip.png)
+
 
 ## Features
 
-- **Customer site** — browse available trips with details, pricing, and imagery
-- **Admin SPA** — secure single-page application for adding, editing, and deleting trips
-- **JWT Authentication** — protected admin routes with token-based login
-- **RESTful API** — clean endpoints for all CRUD operations
-- **Real-time data binding** — Angular updates the UI instantly without page reloads
-- **Modular codebase** — reusable Angular components and centralized API services
+- Browse travel packages with pricing, images, and trip details
+- Manage trips through an Angular admin dashboard
+- Create, update, and delete trips with REST API endpoints
+- Protect admin routes using JWT authentication
+- Update UI data instantly with Angular data binding
+- Use reusable components and centralized API services
 
----
 
 ## Architecture
 
 The app is split into two frontends sharing one backend:
 
 ```
-┌─────────────────────────┐        ┌──────────────────────────┐
-│   Customer Frontend     │        │     Admin SPA (Angular)  │
-│   Express + HTML/CSS    │        │   Components + Services  │
-└────────────┬────────────┘        └────────────┬─────────────┘
-             │                                  │
-             └──────────────┬───────────────────┘
-                            │  RESTful API (JSON)
-                  ┌─────────▼──────────┐
-                  │  Node.js + Express │
-                  │  Routes, Auth, API │
-                  └─────────┬──────────┘
-                            │
-                  ┌─────────▼──────────┐
-                  │      MongoDB       │
-                  │  Trips, Users DB   │
-                  └────────────────────┘
+                                      ┌─────────────────────────┐        ┌──────────────────────────┐
+                                      │   Customer Frontend     │        │     Admin SPA (Angular)  │
+                                      │   Express + HTML/CSS    │        │   Components + Services  │
+                                      └────────────┬────────────┘        └────────────┬─────────────┘
+                                                   │                                  │
+                                                   └──────────────┬───────────────────┘
+                                                                  │  RESTful API (JSON)
+                                                        ┌─────────▼──────────┐
+                                                        │  Node.js + Express │
+                                                        │  Routes, Auth, API │
+                                                        └─────────┬──────────┘
+                                                                  │
+                                                        ┌─────────▼──────────┐
+                                                        │      MongoDB       │
+                                                        │  Trips, Users DB   │
+                                                        └────────────────────┘
 ```
 
-**Why this stack?**
-- **MongoDB** — flexible document model suited for evolving trip/user data structures
-- **Express** — lightweight routing and middleware layer
-- **Angular** — component-driven SPA with two-way data binding for the admin interface
-- **Node.js** — unified JavaScript environment across frontend and backend
+## Why I Used the MEAN Stack
 
----
+- MongoDB provides a flexible document model for trip and user data
+- Express handles routing and backend middleware
+- Angular powers the admin dashboard with reusable components and dynamic UI updates
+- Node.js allows the entire application to use JavaScript across the frontend and backend
+
 
 ## Technologies
 
@@ -75,7 +79,6 @@ The app is split into two frontends sharing one backend:
 | Testing | Postman, MongoDB Compass |
 | Version Control | Git, GitHub |
 
----
 
 ## 📡 API Endpoints
 
@@ -89,7 +92,6 @@ The app is split into two frontends sharing one backend:
 | POST | `/api/login` | No | Authenticate user, returns JWT |
 | POST | `/api/register` | No | Register new admin user |
 
----
 
 ## Getting Started
 
@@ -140,7 +142,6 @@ ng serve
 ```
 > Admin SPA runs at `http://localhost:4200`
 
----
 
 ## Authentication
 
@@ -151,7 +152,6 @@ The admin SPA is protected by JWT authentication. To access trip management:
 3. On successful login, a JWT is stored and automatically attached to all protected API requests
 4. Unauthorized requests to protected routes return `401 Unauthorized`
 
----
 
 ## Testing
 
@@ -162,7 +162,6 @@ API endpoints were tested with **Postman**. Key test cases included:
 - `POST /api/trips` validates required fields and rejects malformed input
 - Invalid credentials on `/api/login` return `401` with no token issued
 
----
 
 ## Key Learnings
 
@@ -172,7 +171,6 @@ API endpoints were tested with **Postman**. Key test cases included:
 - Understanding the tradeoffs between server-rendered pages (Express/HTML) and a SPA (Angular)
 - Practical experience with RESTful API design, Git workflows, and Agile development
 
----
 
 ## Author
 
@@ -180,7 +178,6 @@ API endpoints were tested with **Postman**. Key test cases included:
 - GitHub: [@SamimDW](https://github.com/SamimDW)
 - LinkedIn: [samim-fnu](https://www.linkedin.com/in/samim-fnu/)
 
----
 
 ## 📄 License
 
