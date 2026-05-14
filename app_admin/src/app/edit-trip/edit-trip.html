@@ -6,7 +6,7 @@
             <input
                 type="text"
                 formControlName="code"
-                placeholder="Code"
+                placeholder="Enter trip code (e.g. GR-101)"
                 class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f['code']?.errors }"
             />
@@ -21,7 +21,7 @@
             <input
                 type="text"
                 formControlName="name"
-                placeholder="Name"
+                placeholder="Enter trip name"
                 class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f['name']?.errors }"
             />
@@ -34,7 +34,7 @@
             <input
                 type="text"
                 formControlName="length"
-                placeholder="Name"
+                placeholder="e.g. 5 nights / 6 days"
                 class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f['length']?.errors }"
             />
@@ -58,7 +58,7 @@
             <input
                 type="text"
                 formControlName="resort"
-                placeholder="Resort"
+                placeholder="Enter resort or destination"
                 class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f['resort']?.errors }"
             />
@@ -71,7 +71,7 @@
             <input
                 type="text"
                 formControlName="perPerson"
-                placeholder="Perperson"
+                placeholder="e.g. 1299"
                 class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f['perPerson']?.errors }"
             />
@@ -86,7 +86,7 @@
             <input
                 type="text"
                 formControlName="image"
-                placeholder="Image"
+                placeholder="e.g. reef1.jpg"
                 class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f['image']?.errors }"
             />
@@ -101,7 +101,7 @@
             <input
                 type="text"
                 formControlName="description"
-                placeholder="Description"
+                placeholder="Enter a short trip description"
                 class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && f['description']?.errors }"
             />

@@ -1,0 +1,168 @@
+/* LOGIN PAGE LAYOUT */
+
+.row {
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 1rem;
+}
+
+/* LOGIN CARD */
+
+.col-12.col-md-8 {
+  width: 100%;
+  max-width: 520px;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e3;
+  border-radius: 20px;
+
+  padding: 2.5rem;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* TITLE */
+
+h2 {
+  font-family: 'DM Serif Display', serif;
+
+  font-size: 2.2rem;
+  font-weight: 400;
+
+  color: #2c2c2a;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+/* FORM GROUP */
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+/* LABELS */
+
+.form-group label {
+  display: block;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #5f5e5a;
+
+  margin-bottom: 0.45rem;
+}
+
+/* INPUTS */
+
+.form-group input {
+  width: 100%;
+
+  border: 1px solid #dcdad2;
+
+  border-radius: 10px;
+
+  background: #fcfcfa;
+
+  padding: 0.85rem 1rem;
+
+  font-size: 14px;
+
+  color: #2c2c2a;
+
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    box-shadow 0.15s ease;
+
+  outline: none;
+}
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder {
+  color: #a4a39d;
+}
+
+/* FOCUS */
+
+.form-group input:focus {
+  border-color: #1d9e75;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 4px rgba(29, 158, 117, 0.08);
+}
+
+/* ERROR ALERT */
+
+.alert-danger {
+  border: 1px solid #fecaca !important;
+
+  background: #fef2f2 !important;
+
+  color: #b91c1c !important;
+
+  border-radius: 12px;
+
+  padding: 0.9rem 1rem;
+
+  font-size: 13px;
+
+  margin-bottom: 1.5rem;
+}
+
+/* LOGIN BUTTON */
+
+.btn-primary {
+  width: 100%;
+
+  background: #1d9e75 !important;
+
+  border: none !important;
+
+  border-radius: 12px !important;
+
+  padding: 0.95rem 1rem;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: white !important;
+
+  margin-top: 1rem;
+
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+/* BUTTON HOVER */
+
+.btn-primary:hover {
+  opacity: 0.92;
+
+  transform: translateY(-1px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .col-12.col-md-8 {
+    padding: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}

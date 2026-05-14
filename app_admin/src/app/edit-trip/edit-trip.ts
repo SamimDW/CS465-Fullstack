@@ -12,6 +12,7 @@ import { Trip } from '../models/trip';
   templateUrl: './edit-trip.html',
   styleUrls: ['./edit-trip.css'], // <-- plural
 })
+
 export class EditTrip implements OnInit {
   public editForm!: FormGroup;
   trip!: Trip;

@@ -1,0 +1,156 @@
+.col-md-4 {
+  width: 100% !important;
+  max-width: 900px !important;
+
+  margin: 2rem auto !important;
+  padding: 2rem !important;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e3;
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* TITLE */
+
+h2.text-center {
+  font-family: 'DM Serif Display', serif;
+
+  font-size: 2rem;
+  font-weight: 400;
+
+  color: #2c2c2a;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+/* FORM GROUP */
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+/* LABELS */
+
+.form-group label {
+  display: block;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #5f5e5a;
+
+  margin-bottom: 0.45rem;
+}
+
+/* INPUTS */
+
+.form-control {
+  border: 1px solid #dcdad2 !important;
+
+  border-radius: 10px !important;
+
+  background: #fcfcfa !important;
+
+  padding: 0.8rem 1rem !important;
+
+  font-size: 14px !important;
+
+  color: #2c2c2a !important;
+
+  box-shadow: none !important;
+
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+/* PLACEHOLDER */
+
+.form-control::placeholder {
+  color: #a4a39d;
+}
+
+/* INPUT FOCUS */
+
+.form-control:focus {
+  border-color: #1d9e75 !important;
+
+  background: white !important;
+
+  box-shadow:
+    0 0 0 4px rgba(29, 158, 117, 0.08) !important;
+}
+
+/* INVALID INPUT */
+
+.is-invalid {
+  border-color: #dc2626 !important;
+}
+
+.is-invalid:focus {
+  box-shadow:
+    0 0 0 4px rgba(220, 38, 38, 0.08) !important;
+}
+
+/* ERROR TEXT */
+
+.form-group div {
+  font-size: 12px;
+
+  color: #dc2626;
+
+  margin-top: 0.35rem;
+}
+
+/* BUTTON */
+
+.btn-info {
+  width: 100%;
+
+  background: #1d9e75 !important;
+
+  border: none !important;
+
+  border-radius: 12px !important;
+
+  padding: 0.9rem 1rem;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: white !important;
+
+  margin-top: 1rem;
+
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+/* BUTTON HOVER */
+
+.btn-info:hover {
+  opacity: 0.92;
+
+  transform: translateY(-1px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .col-md-4 {
+    padding: 1.5rem !important;
+    margin: 1rem !important;
+  }
+
+  h2.text-center {
+    font-size: 1.6rem;
+  }
+}
