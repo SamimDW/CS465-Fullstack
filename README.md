@@ -10,8 +10,7 @@ A full-stack travel booking web application built with the **MEAN stack** (Mongo
 
 ### Customer-Facing Trip Listing
 
-![Trip Listing Page](assets/trip-listing-page.png)<br><br>
-
+![Trip Listing Page](assets/trip-listing-page.png)
 
 ### Admin Dashboard - Manage Trips
 
