@@ -40,22 +40,22 @@ A full-stack travel booking web application built with the **MEAN stack** (Mongo
 The app is split into two frontends sharing one backend:
 
 ```
-                                      ┌─────────────────────────┐        ┌──────────────────────────┐
-                                      │   Customer Frontend     │        │     Admin SPA (Angular)  │
-                                      │   Express + HTML/CSS    │        │   Components + Services  │
-                                      └────────────┬────────────┘        └────────────┬─────────────┘
-                                                   │                                  │
-                                                   └──────────────┬───────────────────┘
-                                                                  │  RESTful API (JSON)
-                                                        ┌─────────▼──────────┐
-                                                        │  Node.js + Express │
-                                                        │  Routes, Auth, API │
-                                                        └─────────┬──────────┘
-                                                                  │
-                                                        ┌─────────▼──────────┐
-                                                        │      MongoDB       │
-                                                        │  Trips, Users DB   │
-                                                        └────────────────────┘
+                                ┌─────────────────────────┐        ┌──────────────────────────┐
+                                │   Customer Frontend     │        │     Admin SPA (Angular)  │
+                                │   Express + HTML/CSS    │        │   Components + Services  │
+                                └────────────┬────────────┘        └────────────┬─────────────┘
+                                             │                                  │
+                                             └──────────────┬───────────────────┘
+                                                            │  RESTful API (JSON)
+                                                  ┌─────────▼──────────┐
+                                                  │  Node.js + Express │
+                                                  │  Routes, Auth, API │
+                                                  └─────────┬──────────┘
+                                                            │
+                                                  ┌─────────▼──────────┐
+                                                  │      MongoDB       │
+                                                  │  Trips, Users DB   │
+                                                  └────────────────────┘
 ```
 
 ## Why I Used the MEAN Stack
@@ -85,9 +85,9 @@ The app is split into two frontends sharing one backend:
 |---|---|---|---|
 | GET | `/api/trips` | No | Fetch all trips |
 | GET | `/api/trips/:tripCode` | No | Fetch single trip |
-| POST | `/api/trips` | ✅ Yes | Create a new trip |
-| PUT | `/api/trips/:tripCode` | ✅ Yes | Update a trip |
-| DELETE | `/api/trips/:tripCode` | ✅ Yes | Delete a trip |
+| POST | `/api/trips` | Yes | Create a new trip |
+| PUT | `/api/trips/:tripCode` | Yes | Update a trip |
+| DELETE | `/api/trips/:tripCode` | Yes | Delete a trip |
 | POST | `/api/login` | No | Authenticate user, returns JWT |
 | POST | `/api/register` | No | Register new admin user |
 
@@ -178,6 +178,6 @@ API endpoints were tested with **Postman**. Key test cases included:
 - LinkedIn: [samim-fnu](https://www.linkedin.com/in/samim-fnu/)
 
 
-## 📄 License
+## License
 
 This project was developed for academic purposes at Southern New Hampshire University (CS-465).
